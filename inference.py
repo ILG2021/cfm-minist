@@ -7,9 +7,9 @@ import matplotlib.pyplot as plt
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 model = UNetModel(dim=(1, 28, 28), num_channels=32, num_res_blocks=1, num_classes=10, class_cond=True).to(device)
-model.load_state_dict(torch.load("checkpoints/epoch_7.pth")['model_state_dict'])
+model.load_state_dict(torch.load("checkpoints/epoch_10.pth")['model_state_dict'])
 model.eval()
-# 输入数字
+# 输入数字6
 generate_num = torch.tensor([6], device=device)
 with torch.no_grad():
 	traj = torchdiffeq.odeint(
