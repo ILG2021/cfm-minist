@@ -1,4 +1,4 @@
-# a demo of using Conditional Flow Matching to generate minist data
+# a demo of using Conditional Flow Matching to generate mnist data
 
 ## 安装
 ``
